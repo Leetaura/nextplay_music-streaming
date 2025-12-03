@@ -4,20 +4,20 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'e-cdns-images.dzcdn.net',
+        protocol: "https",
+        hostname: "e-cdns-images.dzcdn.net",
       },
       {
-        protocol: 'https',
-        hostname: 'cdns-images.dzcdn.net',
+        protocol: "https",
+        hostname: "cdns-images.dzcdn.net",
       },
       {
-        protocol: 'https',
-        hostname: 'cdn-images.dzcdn.net',
+        protocol: "https",
+        hostname: "cdn-images.dzcdn.net",
       },
       {
-        protocol: 'https',
-        hostname: 'api.deezer.com',
+        protocol: "https",
+        hostname: "api.deezer.com",
       },
     ],
   },

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -26,28 +26,21 @@ export default function RootLayout({
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [isDarkMode]);
 
   return (
-    <html lang="en" className={isDarkMode ? 'dark' : ''} suppressHydrationWarning>
+    <html lang="en" className={isDarkMode ? "dark" : ""} suppressHydrationWarning>
       <head>
         <title>NextPlay - Your Music Streaming App</title>
         <meta name="description" content="Stream music with NextPlay - powered by Deezer API" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${
-          isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'
-        }`}
-        suppressHydrationWarning
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${isDarkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"}`} suppressHydrationWarning>
         <Navbar />
-        <main className="pb-32 min-h-screen">
-          {children}
-        </main>
+        <main className="pb-32 min-h-screen">{children}</main>
         <FooterPlayer />
       </body>
     </html>

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { Track } from '@/lib/types';
-import TrackCard from './TrackCard';
+import { Track } from "@/lib/types";
+import TrackCard from "./TrackCard";
 
 interface TrackListProps {
   tracks: Track[];
@@ -15,9 +15,7 @@ export default function TrackList({ tracks, title }: TrackListProps) {
 
   return (
     <div className="space-y-4">
-      {title && (
-        <h2 className="text-2xl font-bold">{title}</h2>
-      )}
+      {title && <h2 className="text-2xl font-bold">{title}</h2>}
       <div className="space-y-2">
         {tracks.map((track, index) => (
           <TrackCard key={track.id} track={track} index={index} />
